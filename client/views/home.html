@@ -1,0 +1,16 @@
+<h1>Computed Observable Sample</h1>
+
+<label>Subtotal
+	<input type="text" data-bind="value: subtotal, valueUpdate: 'afterkeydown'" />
+</label>
+<label>Tax
+	<input type="text" data-bind="value: tax, valueUpdate: 'afterkeydown'" />
+</label>
+
+<label>Total
+	<input type="text" data-bind="value: total, valueUpdate: 'afterkeydown'" />
+</label>
+
+<h4 data-bind="text: 'Total: &#36;' + total()"></h4>
+
+<script type="text/javascript" src="app/compute.js"></script>
